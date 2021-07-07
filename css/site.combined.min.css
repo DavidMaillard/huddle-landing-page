@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+/**
+ * @project        frontend-mentor-challenge
+ * @author         David Maillard, <maillard.david23@gmail.com>
+ * @build          Wed, Jul 7, 2021 2:42 PM ET
+ * @release        983b1126eccd03707001f75b9f4acd9c1acc5530 [master]
+ * @copyright      Copyright (c) 2021, REPLACE_ME
+ *
+ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -10,7 +19,7 @@ body {
   align-items: stretch;
   -ms-flex-pack: center;
   justify-content: center;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0 40px;
   background: #684BB1 url("../images/bg-desktop.svg") no-repeat center center/cover; }
@@ -82,7 +91,8 @@ body {
       -ms-flex-direction: column;
       flex-direction: column;
       -ms-flex-align: start;
-      align-items: flex-start; }
+      align-items: flex-start;
+      padding-top: 32px; }
       @media (max-width: 1120px) {
         .main-page .main-section .content-side {
           width: calc(60% - 20px); } }
@@ -90,8 +100,10 @@ body {
         .main-page .main-section .content-side {
           width: 100%;
           -ms-flex-align: center;
-          align-items: center; } }
+          align-items: center;
+          padding-top: 0; } }
       .main-page .main-section .content-side .heading {
+        font-family: "Poppins", sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 40px;
@@ -117,6 +129,7 @@ body {
             font-size: 16px;
             line-height: 24px; } }
       .main-page .main-section .content-side .button {
+        font-family: "Poppins", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;

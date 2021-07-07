@@ -7,7 +7,7 @@ body {
   display: flex;
   align-items: stretch;
   justify-content: center;
-  font-family: $fontLibre;
+  font-family: $fontOpenSans;
   margin: 0;
   padding: 0 40px;
   background: #684BB1 url('../images/bg-desktop.svg') no-repeat center center / cover;
@@ -93,6 +93,7 @@ body {
       }
 
       .heading {
+        font-family: $fontPoppins;
         font-style: normal;
         font-weight: 600;
         font-size: 40px;
@@ -124,6 +125,7 @@ body {
       }
 
       .button {
+        font-family: $fontPoppins;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
