@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  font-family: $fontLibre;
+  margin: 0;
+  padding: 0 40px;
+  background: #684BB1 url('../images/bg-desktop.svg') no-repeat center center / cover;
+
+  @media (max-width: 850px) {
+    background: #684BB1 url('../images/bg-mobile.svg') no-repeat top center / contain;
+  }
+}
+
+.main-page {
+  width: 100%;
+  max-width: 1275px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 64px 0 40px;
+
+  @media (max-width: 650px) {
+    justify-content: flex-start;
+  }
+
+  .logo {
+    align-self: flex-start;
+    height: 32px;
+    margin-bottom: 104px;
+
+    @media (max-width: 850px) {
+      margin-bottom: 70px;
+      height: 19px;
+    }
+  }
+
+  .main-section {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media (max-width: 850px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .illustration-side {
+      width: 54.5%;
+      display: flex;
+
+      @media (max-width: 1120px) {
+        width: calc(40% - 20px);
+      }
+
+      @media (max-width: 850px) {
+        width: 100%;
+        margin-bottom: 60px;
+        justify-content: center;
+      }
+
+      .illustration {
+        width: 100%;
+
+        @media (max-width: 850px) {
+          max-width: 400px;
+        }
+      }
+    }
+
+    .content-side {
+      width: 40.8%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @media (max-width: 1120px) {
+        width: calc(60% - 20px);
+      }
+
+      @media (max-width: 850px) {
+        width: 100%;
+        align-items: center;
+      }
+
+      .heading {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+        color: #FFFFFF;
+        margin: 0 0 24px;
+
+        @media (max-width: 850px) {
+          text-align: center;
+          font-size: 24px;
+          line-height: 36px;
+          margin-bottom: 16px;
+        }
+      }
+
+      .text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+        margin: 0 0 24px;
+
+        @media (max-width: 850px) {
+          text-align: center;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+      .button {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: #684BB1;
+        padding: 15px;
+        min-width: 200px;
+        background: #FFFFFF;
+        box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+        border-radius: 28px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background ease-out .2s, color ease-out .2s;
+
+        @media (max-width: 850px) {
+          font-size: 12px;
+          line-height: 18px;
+          padding: 10px;
+          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+          border-radius: 20px;
+        }
+
+        &:hover {
+          background: #E880E8;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  .social-links {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+
+    @media (max-width: 850px) {
+      margin-top: 64px;
+      align-self: center;
+    }
+
+    .social-link {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+      border: 1.17647px solid #FFFFFF;
+      margin-left: 16px;
+      transition: background ease-out .2s, border ease-out .2s;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 18px;
+
+        path {
+          transition: fill ease-out .2s;
+          will-change: fill;
+        }
+      }
+
+      &:hover {
+        border: 0.918357px solid #FF52C1;
+
+        svg > path {
+          fill: #FF52C1;
+        }
+      }
+    }
+  }
+}
