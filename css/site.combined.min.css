@@ -60,7 +60,7 @@ body {
     align-items: flex-start;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    @media (max-width: 850px) {
+    @media (max-width: 1120px) {
       .main-page .main-section {
         -ms-flex-direction: column;
         flex-direction: column;
@@ -72,16 +72,13 @@ body {
       display: flex; }
       @media (max-width: 1120px) {
         .main-page .main-section .illustration-side {
-          width: calc(40% - 20px); } }
-      @media (max-width: 850px) {
-        .main-page .main-section .illustration-side {
           width: 100%;
           margin-bottom: 60px;
           -ms-flex-pack: center;
           justify-content: center; } }
       .main-page .main-section .illustration-side .illustration {
         width: 100%; }
-        @media (max-width: 850px) {
+        @media (max-width: 1120px) {
           .main-page .main-section .illustration-side .illustration {
             max-width: 400px; } }
     .main-page .main-section .content-side {
@@ -95,9 +92,6 @@ body {
       padding-top: 32px; }
       @media (max-width: 1120px) {
         .main-page .main-section .content-side {
-          width: calc(60% - 20px); } }
-      @media (max-width: 850px) {
-        .main-page .main-section .content-side {
           width: 100%;
           -ms-flex-align: center;
           align-items: center;
@@ -110,9 +104,11 @@ body {
         line-height: 60px;
         color: #FFFFFF;
         margin: 0 0 24px; }
+        @media (max-width: 1120px) {
+          .main-page .main-section .content-side .heading {
+            text-align: center; } }
         @media (max-width: 850px) {
           .main-page .main-section .content-side .heading {
-            text-align: center;
             font-size: 24px;
             line-height: 36px;
             margin-bottom: 16px; } }
@@ -123,9 +119,11 @@ body {
         line-height: 27px;
         color: #FFFFFF;
         margin: 0 0 24px; }
+        @media (max-width: 1120px) {
+          .main-page .main-section .content-side .text {
+            text-align: center; } }
         @media (max-width: 850px) {
           .main-page .main-section .content-side .text {
-            text-align: center;
             font-size: 16px;
             line-height: 24px; } }
       .main-page .main-section .content-side .button {
